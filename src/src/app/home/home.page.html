@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title class="ion-text-center">test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <div class="grid-input-content" (click)="selectImage()">
+      <div class="grid-column1">
+        <div class="input-content">
+          <p class="input-text">{{ "Image" }}</p>
+        </div>
+
+        <div class="selected-img-contatiner">
+          <img [src]="base64src" />
+        </div>
+        
+        <div class="selected-img-contatiner" *ngIf="imgSrc && !base64src">
+          <img [src]="imgSrc" />
+        </div>
+      </div>
+
+      <div class="grid-column2">
+        <ion-button size="small">{{ "Select" }}</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

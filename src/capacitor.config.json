@@ -1,0 +1,7 @@
+{
+  "appId": "net.test.app",
+  "appName": "test_app",
+  "bundledWebRuntime": false,
+  "webDir": "www",
+  "cordova": {}
+}
