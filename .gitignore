@@ -229,7 +229,6 @@ npm-debug.log*
 /node_modules
 /platforms
 /plugins
-/www
 
 resources/android/icon
 resources/android/splash
